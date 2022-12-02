@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class User {
 
     // TODO Create Attribute of User; Name and Phone Number then Create Setter
@@ -11,13 +13,10 @@ public class User {
         this.noTelepon = noTelepon;
     }
     // TODO Create Method to Register User and Display User's Name and Phone Number and success message
-    public void register() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Masukkan nama: ");
-        String nama = scanner.next();
-        System.out.print("Masukkan nomor telepon: ");
-        int noTelepon = scanner.nextInt();
-        System.out.println("Selamat datang " + nama + "!");
-        System.out.println("Nomor telepon anda adalah " + noTelepon);
+    public void register(String nama, int noTelepon) {
+        System.out.println("===========================");
+        System.out.println("Register success");
+        System.out.println("Nama: " + nama);
+        System.out.println("No. Telepon: " + noTelepon);
     }
 }
